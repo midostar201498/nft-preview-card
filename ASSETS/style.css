@@ -1,0 +1,57 @@
+:root{
+    padding: 0%;margin: 0;
+
+--VerydarkbluemainBG: hsl(217, 54%, 11%);
+--VerydarkbluecardBG: hsl(216, 50%, 16%);
+--Verydarkblueline: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+--Softblue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+}
+@font-face {
+    font-family:Outfit ;
+    src: url(./fonts/Outfit-VariableFont_wght.ttf);
+}
+h1{
+    font-family: Outfit;color: var(--White);font-weight:600 ;margin-right: 75px;margin-top: -20px;
+}
+p{
+    font-family: Outfit;color: var(--Softblue);font-weight: 400;margin-top: -40px;font-size: 18px;margin-left: 15px;width: 350px;
+}
+a{
+    display: inline; font-weight: 300;margin-left: 1px;color: var(--Cyan); font-family: Outfit;font-weight: 400;text-decoration: none;
+}
+
+body{
+    display: flex;justify-content: center;background-color: var(--VerydarkbluemainBG);
+}
+
+.container{display: flex;justify-content: center;flex-wrap: wrap;
+height: 640px;width: 390px;margin-top: 6%;
+background-color: var(--VerydarkbluecardBG);
+border-radius: 15px;box-shadow: 0px 33px 7px 19px rgba(0,0,0,0.1);
+}
+
+#Equilibrium{
+    width: 340px;margin: 20px;height: 320px;border-radius: 10px;margin-left: 20px ;background-color: white;
+}
+.pic1{
+    width: 342px;height: 322px;border-radius: 10px;margin-left: -1px;margin-top: -1px;
+}
+.pic2{
+    position: relative;top: -190px;right: -145px;display: none;
+}
+#Equilibrium:hover img.pic2{
+display: block;
+}
+#Equilibrium:hover img.pic1{
+    filter: opacity(50%);
+}
+#Equilibrium:hover{cursor: pointer}
+#secondpart{
+    width: 390px;margin-top: -30px;
+} 
+
+#avatar{
+width: 40px;border-color: var(--White);border-radius: 50rem;border-width: 1px;border-style: solid;margin-left: 27px;position: absolute;margin-top: -8px;
+} 
